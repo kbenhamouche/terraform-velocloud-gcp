@@ -63,12 +63,8 @@ resource "google_compute_firewall" "public_fw_rules" {
 resource "google_compute_firewall" "private_fw_rules" {
     name = "private-fw-rules"
     network = google_compute_network.vcn_demo_private_vpc.id
-    allow { //SSH
-        protocol = "tcp"
-        ports = ["22"]
-    }
-    allow { //ICMP
-        protocol = "icmp"
+    allow { //ALL
+        protocol = "all"
     }
     source_ranges = ["0.0.0.0/0"]
 }
