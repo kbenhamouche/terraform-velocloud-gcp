@@ -2,6 +2,8 @@
 
 Deploy a VeloCloud Edge on GCP via Terraform.
 
+![GCP Network Topology](GCP-Network-Topolgy.png)
+
 This example is for DEMO purpose ONLY
 
 Before to execute the "tfapply.sh" script, you have to provide the following requirements:
